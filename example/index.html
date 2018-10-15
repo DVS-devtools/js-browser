@@ -8,7 +8,16 @@
 <body>
     <body>
         <h1>JsBrowser</h1>
-
+        <div>
+            <label>PrevPage: </label><label id="prevPage"></label>
+        </div>
+        <div>
+            <label>QueryParams: </label><label id="queryParams"></label>
+        </div>
+        <button onClick="shiftPage()">change page</button>
+        <!-- <button onClick="getPrevPage()">get prev page</button> -->
+        <!-- <button onClick="getQueryParams()">get query params</button> -->
+        <button onClick="addQueryParams()">set query params</button>
         <script src="./index.js"></script>
     </body>
 </body>
