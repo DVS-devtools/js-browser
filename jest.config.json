@@ -1,9 +1,8 @@
 {
     "collectCoverage": true,
     "collectCoverageFrom": [
-        "src/**/*.js",
-        "!src/index.js",
-        "!src/global.js"
+        "src/**/*.js"
     ],
+    "testURL": "https://www.google.it/#!/test.html",
     "coverageReporters": ["lcov", "text", "text-summary"]
 }

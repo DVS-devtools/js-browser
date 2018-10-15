@@ -9,6 +9,7 @@ class Browser {
     constructor() {
         this.currentPage = null;
         this.prevPage = null;
+
         this.getQueryParams = getQueryParams;
     }
 
