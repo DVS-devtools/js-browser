@@ -2,16 +2,22 @@
  * @class JsBrowser
  * @description Description of your library
  */
-import init from './init';
-import log from './log';
+
+import getQueryParams from './getQueryParams';
+import shiftPage from './shiftPage';
+import getPrevPage from './getPrevPage';
 
 export default {
     /**
-     * @see modules/init
+     * @see modules/getQueryParams
      */
-    init,
+    getQueryParams,
     /**
-     * @see modules/log
+     * @see modules/shiftPage
      */
-    log
+    shiftPage,
+    /**
+     * @see modules/getPrevPage
+     */
+    getPrevPage,
 };
