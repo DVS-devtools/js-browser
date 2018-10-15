@@ -1,3 +1,5 @@
+import Global from '../global';
+
 /**
  * @memberof JsBrowser
  * @function log
@@ -14,7 +16,9 @@
  *  });
  */
 
-export default (options) => {
-    const newMessage = `${options.message} world`;
-    console.log(newMessage); // eslint-disable-line no-console
+export default (currentPage) => {
+    if (currentPage && Global.currentPage !== currentPage) {
+        Global.prevPage = Global.currentPage;
+        Global.currentPage = currentPage;
+    }
 };
