@@ -10,7 +10,7 @@
  * import Browser from 'js-browser';
  *
  *
- *  const queryParams = Browser.getQueryParams();
+ * const queryParams = Browser.getQueryParams();
  */
 
 export default () => {
