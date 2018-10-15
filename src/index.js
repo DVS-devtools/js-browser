@@ -4,20 +4,30 @@
  */
 
 import getQueryParams from './getQueryParams';
-import shiftPage from './shiftPage';
-import getPrevPage from './getPrevPage';
 
-export default {
-    /**
-     * @see modules/getQueryParams
-     */
-    getQueryParams,
+class Browser {
+    constructor() {
+        this.currentPage = null;
+        this.prevPage = null;
+        this.getQueryParams = getQueryParams;
+    }
+
     /**
      * @see modules/shiftPage
      */
-    shiftPage,
+    shiftPage(currentPage) {
+        if (currentPage && this.currentPage !== currentPage) {
+            this.prevPage = this.currentPage;
+            this.currentPage = currentPage;
+        }
+    }
+
     /**
      * @see modules/getPrevPage
      */
-    getPrevPage,
-};
+    getPrevPage() {
+        return this.prevPage;
+    }
+}
+
+export default new Browser();
