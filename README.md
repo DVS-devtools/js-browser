@@ -18,8 +18,10 @@ import { Browser } from 'js-browser';
 // Get previous page
 const prevPage = Browser.getPrevPage();
 
+// Set browser new state
 Browser.shiftPage('/home'); 
 
+// Get query params in your url
 const queryParams = Browser.getQueryParams();
 ```
 
