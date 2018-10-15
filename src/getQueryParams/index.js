@@ -1,18 +1,16 @@
 /**
  * @memberof JsBrowser
- * @function init
- * @description Return the message + ' world'
- * @param {Object} options (see attributes below)
- * @param {String} [options.message=''] message to show
- * @returns {String} Your message + ' world'
+ * @function getQueryParams
+ * @description Return the query params object (this will work only if query params
+ * are after the hashbang)
+ * @returns {Object} {queryParamsKey1: queryParamsValue1, queryParamsKey2: queryParamsValue2... }
 
  *
  * @example
- * // Initialize JsBrowser
- *  var foo = JsBrowser.init({
- *      message: 'hello'
- *  });
- *  console.log(foo);
+ * import Browser from 'js-browser';
+ *
+ *
+ *  const queryParams = Browser.getQueryParams();
  */
 
 export default () => {
