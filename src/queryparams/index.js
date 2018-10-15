@@ -15,7 +15,7 @@
  *  console.log(foo);
  */
 
-export default () =>  {
+export default () => {
     // take from BarneyBrowser.getQueryParams, we can change this after
     const url = window.location.href;
     const vars = {};
@@ -25,7 +25,8 @@ export default () =>  {
         const querystring = url.slice(url.indexOf('?') + 1);
         if (querystring) {
             const hashes = querystring.split('&');
-            for (let i = 0; i < hashes.length; i++) {
+
+            for (let i = 0; i < hashes.length; i += 1) {
                 if (hashes[i].indexOf('=') !== -1) {
                     hash = hashes[i].split('=');
 
