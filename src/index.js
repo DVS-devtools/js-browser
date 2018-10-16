@@ -17,6 +17,9 @@ class Browser {
          * @see modules/getQueryParams
          */
         this.getQueryParams = getQueryParams;
+
+        this.shiftPage = this.shiftPage.bind(this);
+        this.getPrevPage = this.getPrevPage.bind(this);
     }
 
     /**

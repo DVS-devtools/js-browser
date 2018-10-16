@@ -182,6 +182,8 @@ function () {
      */
 
     this.getQueryParams = _getQueryParams.default;
+    this.shiftPage = this.shiftPage.bind(this);
+    this.getPrevPage = this.getPrevPage.bind(this);
   }
   /**
    * @memberof JsBrowser
