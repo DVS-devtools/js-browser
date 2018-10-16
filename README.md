@@ -5,11 +5,9 @@
 [![npm version](https://badge.fury.io/js/%40docomodigital%2Fjs-browser.svg)](https://badge.fury.io/js/%40docomodigital%2Fjs-browser)
 [![Greenkeeper badge](https://badges.greenkeeper.io/docomodigital/js-browser.svg)](https://greenkeeper.io/)
 
+Provides you an alternative method to manage previous and current page changements.
 
-JsBrowser provides you an alternative method to manage previous and current page changements.
-
-Is particularly used to get query params as object and to get the previous page in order to implement an 
-easy and basic history in your routing
+Is particularly used to get query params as object and to get the previous page in order to implement an easy and basic history in your routing.
 
 ## Usage
 ```javascript
@@ -42,5 +40,3 @@ or run the following command insite the js-browser folder:
 ```bash
 npm run doc:open
 ```
-
-
